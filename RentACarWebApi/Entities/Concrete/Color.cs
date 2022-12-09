@@ -1,0 +1,16 @@
+﻿using Core.Entities.Abstract;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entities.Concrete
+{
+    public class Color:IEntity
+    {
+        //yani 1 id li color kırmızı gibi değerler vermek için Id ve ColorName verdim.
+        public int ColorId { get; set; }
+        public string ColorName { get; set; }
+    }
+}
