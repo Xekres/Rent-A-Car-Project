@@ -38,5 +38,10 @@ namespace Business.Constants
         public static string AccessTokenCreated = "Token oluşturuldu";
         public static string FailAddedImageLimit = "Başarısız Eklenen Resim Sınırı ";
 
+
+        public static string NotExist = "Bulunamadı";
+        public static string CardExist = "Kredi kartı zaten var";
+
+        
     }
 }

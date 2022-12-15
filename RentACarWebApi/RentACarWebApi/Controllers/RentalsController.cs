@@ -119,5 +119,17 @@ namespace RentACarWebApi.Controllers
             }
             return BadRequest(result.Message);
         }
+
+        [HttpGet("getrentaldetails")]
+        public IActionResult GetRentalDetails()
+        {
+            //Thread.Sleep(2000);
+            var result = _rentalService.GetRentalDetails();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
+        }
     }
 }

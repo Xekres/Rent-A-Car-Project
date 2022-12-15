@@ -99,7 +99,6 @@ namespace RentACarWebApi.Controllers
         }
 
         [HttpGet("getbyid")]
-
         public IActionResult GetById(int id)
         {
             var result = _carService.GetById(id);
@@ -127,6 +126,18 @@ namespace RentACarWebApi.Controllers
             //front-end te spinner atmak için 
             Thread.Sleep(2000);
             var result = _carService.GetCarDetails();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getdetailbyid")]
+        public IActionResult GetCarDetail(int carId)
+        {
+            //Thread.Sleep(2000);
+            var result = _carService.GetCarDetails(carId);
             if (result.Success)
             {
                 return Ok(result);

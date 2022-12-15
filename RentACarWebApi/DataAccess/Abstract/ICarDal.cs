@@ -14,5 +14,6 @@ namespace DataAccess.Abstract
         //ürüne ait özel operasyonlar bu kısma yazılmalıdır.
 
         List<CarDetailDto> GetCarDetails();
+        CarDetailDto GetCarDetails(int carId);
     }
 }

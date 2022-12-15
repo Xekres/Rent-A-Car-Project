@@ -101,5 +101,6 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<CarImage>(_carImageDal.Get(p => p.Id == Id)); ;
         }
+
     }
 }

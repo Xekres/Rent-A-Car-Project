@@ -12,5 +12,6 @@ namespace Entities.Concrete
         //araba markasının id si ve markanın adını bu class'ımda tanımlıyorum.
         public int BrandId { get; set; }
         public string BrandName { get; set; }
+        
     }
 }

@@ -29,5 +29,6 @@ namespace Business.Abstract
         //Araba Güncellemek için;
         IResult Update(Car car);
         IDataResult<List<Car>> GetCarsByBrandId(int id);
+        public IDataResult<CarDetailDto> GetCarDetails(int carId);
     }
 }
